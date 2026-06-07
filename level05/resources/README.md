@@ -4,6 +4,7 @@
 O objetivo deste nível é explorar uma tarefa agendada do sistema (Cron Job) mal configurada, que executa cegamente arquivos colocados em um diretório público, permitindo a Execução Arbitrária de Código (Arbitrary Code Execution).
 
 ## 🔍 Análise da Vulnerabilidade
+
 * **Tipo:** *Insecure Cron Job* (Tarefa Agendada Insegura) / *Arbitrary Code Execution*.
 * **Arquivo Alvo:**
     * O script executável: `/usr/sbin/openarenaserver`

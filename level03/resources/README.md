@@ -4,7 +4,7 @@
 O objetivo deste nível é escalar privilégios aproveitando-se de um arquivo executável que possui a permissão SUID ativada e que faz chamadas de sistema inseguras.
 
 ## 🔍 Análise da Vulnerabilidade
-Explique aqui qual foi a falha encontrada.
+
 * **Tipo:** *PATH Hijacking* (Sequestro de PATH) / *Insecure Environment Variable Usage* em binário SUID.
 * **Arquivo Alvo:** `level03` (Executável ELF 32-bit).
 * **Comportamento:** Ao listar as permissões do arquivo com `ls -al`, notamos a flag SUID ativada (`-rwsr-sr-x`). Isso significa que, independentemente de quem execute o programa, ele rodará com os privilégios do dono do arquivo (neste caso, `flag03`).

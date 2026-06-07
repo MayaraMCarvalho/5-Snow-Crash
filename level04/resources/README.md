@@ -4,6 +4,7 @@
 O objetivo deste nível é explorar um script Perl (CGI) que está rodando em segundo plano como um serviço web, conseguindo executar comandos arbitrários no sistema (Remote Code Execution) para obter a flag.
 
 ## 🔍 Análise da Vulnerabilidade
+
 * **Tipo:** *OS Command Injection* (Injeção de Comando no Sistema Operacional) / *Insecure CGI Script*.
 * **Arquivo Alvo:** `level04.pl` (Script Perl com permissão SUID).
 * **Comportamento:** Lendo o código-fonte do arquivo `level04.pl`, notamos que ele é um script CGI servido na porta `4747`. A vulnerabilidade crítica está na forma como ele processa a entrada do usuário:
