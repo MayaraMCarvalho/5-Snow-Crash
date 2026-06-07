@@ -26,7 +26,7 @@ O objetivo deste nível é recuperar a senha original descriptografando um arqui
     ```
 
 2.  **Engenharia Reversa:**
-    Transferimos os arquivos para o ambiente local via `scp` e utilizamos um descompilador (Ghidra) para confirmar a lógica em C. A linha crítica do algoritmo original era:
+    Transferimos os arquivos para o ambiente local via `scp` e utilizamos um descompilador para confirmar a lógica em C. A linha crítica do algoritmo original era:
     ```c
     putchar((int)*(char *)(local_120 + *(int *)(param_2 + 4)) + local_120);
     ```

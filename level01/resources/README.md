@@ -28,7 +28,7 @@ Isso expõe o hash da senha para qualquer usuário do sistema, permitindo um ata
     Identificamos uma anomalia na linha do usuário `flag01`:
 
     ```plaintext
-    flag00:x:3000:3000::/home/flag/flag00:/bin/bashh  <-- Usuário seguro (tem 'x')
+    flag00:x:3000:3000::/home/flag/flag00:/bin/bash  <-- Usuário seguro (tem 'x')
     flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash  <-- VULNERÁVEL
     ```
     A string `42hDRfypTqqnw` é o hash da senha.
